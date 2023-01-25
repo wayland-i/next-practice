@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import React, { useState } from 'react'
+import styles from '../../styles/Ninjas.module.css';
 
 
 
@@ -23,9 +25,9 @@ function ninjas({ ninjas }) {
         <h1>All Ninjas</h1>
         {ninjas.map(ninja => (
           <div key={ninja.id}>
-            <a>
+            <Link href={`/ninjas/${ninja.id}`} className={styles.single}>
               <h3>{ninja.name}</h3>
-            </a>
+            </Link>
           </div>
         ))}
     </div>
