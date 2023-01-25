@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../../styles/Ninjas.module.css';
 import Head from 'next/head';
 
@@ -19,7 +19,7 @@ export const getStaticProps = async () => {
   
 }
 
-function ninjas({ ninjas }) {
+function Ninjas({ ninjas }) {
 
   return (
     <>
@@ -41,4 +41,4 @@ function ninjas({ ninjas }) {
   )
 }
 
-export default ninjas
+export default Ninjas
