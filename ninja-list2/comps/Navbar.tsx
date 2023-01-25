@@ -1,15 +1,20 @@
 import React from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
 
 function Navbar() {
   return (
     <nav>
-        <div>
-            <h1>Ninja List</h1>
+        <div className='logo'>
+          <Link href='/'>
+            <Image src='/logo.png' width={128} height={77} alt='logo'/>
+          </Link>
         </div>
-        <Link href='/'>Home</Link>
-        <Link href='/about'>About</Link>
-        <Link href='/ninjas'>Ninja listing</Link>
+        <div className='links'>
+          <Link href='/'>Home</Link>
+          <Link href='/about'>About</Link>
+          <Link href='/ninjas'>Ninja listing</Link>
+        </div>
     </nav>
   )
 }
