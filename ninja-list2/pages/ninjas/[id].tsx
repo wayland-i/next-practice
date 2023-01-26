@@ -27,7 +27,6 @@ export const getStaticProps = async (context) => {
 }
 
 function Details ({ ninja }) {
-    // console.log(ninja)
 
   return (
     <div>
@@ -40,3 +39,5 @@ function Details ({ ninja }) {
 }
 
 export default Details;
+
+
